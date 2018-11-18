@@ -19,6 +19,7 @@
         $password_confirmation = $_POST['password_confirmation'] ?? null;
 
         //var_dump($_POST);
+        
     $errores=[];
 
     //Validar los datos
@@ -79,7 +80,7 @@
 
                 $result = mysqli_query($db, $query);
 
-                if($result){ //Si sale bien que te redirija al índice
+                if($result){ //Si sale bien la acción que te redirija al índice
                     header("Location: http://localhost/project/");
                     }else{
 
