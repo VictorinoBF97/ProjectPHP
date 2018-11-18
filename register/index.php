@@ -24,7 +24,7 @@
 
     //Validar los datos
 
-            // username:
+            // username
             if ( empty($username) ){
                 $errors['username']['empty'] = "Debes introducir un nombre de usuario";
                 $username = null;
@@ -40,7 +40,7 @@
                 </div>";
             }
 
-            //name:
+            //name
             if ( empty($name) ){
                 $errors['name']['empty'] = "Debes introducir un nombre obligatorio";
                 $name = null;
@@ -48,7 +48,7 @@
 
     
         
-            // email:
+            // email
             if ( empty($email) ){
                 $errors['email']['empty'] = "Debes introducir un email.";
                 $email = null;
@@ -58,7 +58,7 @@
                 $email = null;
             }
         
-            // password:
+            // password
             if ( empty($password) ){
                 $errors['password']['empty'] = "Debes facilitar una contraseña.";
             }
@@ -75,7 +75,7 @@
 
             if( empty($errores)){
                 $password_segura = password_hash($password, PASSWORD_BCRYPT);
-                // echo "Guardar en la BD";
+                // echo "Guardar en la BASE DE DATOS";
                  $query = "INSERT INTO users VALUES(null,'$username','$email','$password_segura',NOW(),NOW())";
 
                 $result = mysqli_query($db, $query);
