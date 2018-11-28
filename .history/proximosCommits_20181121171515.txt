@@ -1,0 +1,6 @@
+- Añadir recambios 
+- Bundle
+
+BOOTSTRAP
+
+-Componente CARD
